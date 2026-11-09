@@ -1,0 +1,14 @@
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\bin\Debug\net10.0\PokeJJCM.exe
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\bin\Debug\net10.0\PokeJJCM.deps.json
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\bin\Debug\net10.0\PokeJJCM.runtimeconfig.json
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\bin\Debug\net10.0\PokeJJCM.dll
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\bin\Debug\net10.0\PokeJJCM.pdb
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\obj\Debug\net10.0\PokeJJCM.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\obj\Debug\net10.0\PokeJJCM.AssemblyInfoInputs.cache
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\obj\Debug\net10.0\PokeJJCM.AssemblyInfo.cs
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\obj\Debug\net10.0\PokeJJCM.csproj.CoreCompileInputs.cache
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\obj\Debug\net10.0\PokeJJCM.dll
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\obj\Debug\net10.0\refint\PokeJJCM.dll
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\obj\Debug\net10.0\PokeJJCM.pdb
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\obj\Debug\net10.0\PokeJJCM.genruntimeconfig.cache
+c:\Users\Presencial\Desktop\WORKSPACE\tarea 8 _POO\PokeJJCM\obj\Debug\net10.0\ref\PokeJJCM.dll

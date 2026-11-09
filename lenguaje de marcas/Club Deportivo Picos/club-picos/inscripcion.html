@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Deportivo Picos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Inscripción al Club</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Portada</a></li>
+                <li><a href="inscripcion.html">Inscripción</a></li>
+                <li><a href="horario.html">Horarios y Tarifas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inscripcion">
+        <form method="post" action="https://httpbin.org/post">
+
+            <!-- Datos personales -->
+            <fieldset>
+                <legend>Datos personales</legend>
+                
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü ]{2,40}" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[6789]\d{8}" title="9 cifras, empezando por 6, 7, 8 o 9. Sin espacios." required>
+                </div>
+
+                <div>
+                    <label for="cp">Código postal:</label>
+                    <input type="text" id="cp" name="cp" pattern="\d{5}">
+
+                <div>
+                    <label for="fnac">Fecha de nacimiento:</label>
+                    <input type="date" id="fnac" name="fnac" min="1930-01-01" max="2020-12-31" required>
+                </div>
+            </fieldset>
+
+            <!--  Actividades -->
+            <fieldset>
+                <legend>Actividades</legend>
+
+                <div>
+                    <label for="actividad">Actividad principal:</label>
+                    <select id="actividad" name="actividad" required>
+                        <option value="" disabled selected>-- Elige --</option>
+                        <optgroup label="Montaña">
+                            <option value="escalada">Escalada</option>
+                        </optgroup>
+                        <optgroup label="Sala">
+                            <option value="yoga">Yoga</option>
+                            <option value="pilates">Pilates</option>
+                            <option value="padel">Pádel</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Turno</legend>
+                    <label><input type="radio" name="turno" value="mañana" required> Mañana</label>
+                    <label><input type="radio" name="turno" value="tarde"> Tarde</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Extras</legend>
+                    <label><input type="checkbox" name="extras" value="seguro"> Seguro deportivo</label>
+                    <label><input type="checkbox" name="extras" value="camiseta"> Camiseta del club</label>
+                </fieldset>
+            </fieldset>
+
+            <!-- ¿Cómo nos conociste? con datalist -->
+            <div>
+                <label for="conocio">¿Cómo nos conociste?</label>
+                <input type="text" id="conocio" name="conocio" list="sugerencias">
+                <datalist id="sugerencias">
+                    <option value="Redes sociales">
+                    <option value="Amigos">
+                    <option value="Prensa">
+                </datalist>
+            </div>
+
+            <!-- Comentarios con textarea -->
+            <div>
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" maxlength="300" placeholder="Escribe tus comentarios aquí..." title="Máximo 300 caracteres"></textarea>
+            </div>
+
+            <!-- Casilla de aceptación de normas -->
+            <div>
+                <label>
+                    <input type="checkbox" name="normas" required> Acepto las normas del club
+                </label>
+            </div>
+
+            <!-- Botones de acción -->
+            <div>
+                <button type="submit">Enviar inscripción</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

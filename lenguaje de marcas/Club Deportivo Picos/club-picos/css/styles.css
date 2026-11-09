@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f3f6f4;
+	margin: 0 auto;
+	padding: 15px;
+	background: #fff;
+}
+.index {
+	text-align: center;
+	margin-top: 100px;
+}
+header {
+	text-align: center;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #f3f6f4;
+
+}
+#inscripcion {
+	width: min(100%, 560px);
+	margin: 0 auto;
+	padding: 36px;
+	background: #fff;
+
+}
+
+#inscripcion label {
+	display: block;
+	margin: 0 0 7px;
+	font-weight: 600;
+}
+
+input:user-invalid, select:user-invalid, textarea:user-invalid {
+    border: 2px solid #c0392b;
+    background-color: #fdecea;
+  }
+  input:user-valid {
+    border: 2px solid #27ae60;
+  }
+  table, th, td { border: 1px solid #555;
+	border-collapse: collapse;
+	padding: 6px;
+	text-align: center;
+	margin: 0 auto;
+	}
