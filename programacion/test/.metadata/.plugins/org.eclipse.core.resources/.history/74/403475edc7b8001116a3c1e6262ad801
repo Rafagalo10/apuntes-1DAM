@@ -1,0 +1,109 @@
+package programa;
+
+import java.util.Scanner;
+
+public class Vol {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+//		sc.useLocale(java.util.Locale.US);
+//		double PI=3.1416;
+//		System.out.println("Insertar radio");
+//		double r=sc.nextDouble();
+//		double Volumen= ((double)4/3) * PI * Math.pow(r,3);
+//		System.out.println(Volumen);
+		
+		
+		
+		
+//		System.out.println("Introducir un caracter");
+//		char caracter=sc.nextLine().charAt(0);
+//		int codigo = caracter;
+//		System.out.println("El codigo ASCII de "+caracter+" es "+codigo);
+		
+		
+		
+		
+//		System.out.println("Introducir una temperatura en ºC");
+//		int cent=sc.nextInt();
+//		int f=32+(9*cent/5);
+//		System.out.println(cent+"ºC en Fahrenheit es "+f+"ºF");
+		
+		
+		
+//		System.out.println("introducir velocidad km/h");
+//		int km=sc.nextInt();
+//		int ms=km*5/18;
+//		System.out.println(km+"km/h convertido a m/s es "+ms);
+		
+//		System.out.println("Introducir el primer cateto");
+//		int cateto1=sc.nextInt();
+//		System.out.println("Introducir el segundo cateto");
+//		int cateto2=sc.nextInt();
+//		double hipotenusa=Math.sqrt((Math.pow(cateto1,2)+Math.pow(cateto2, 2)));
+//		.out.println("la hipotenusa de los catetos introducidos es "+ hipotenusa);
+//		
+
+//	10.	
+//		System.out.println("Introducir su edad");
+//		int edad=sc.nextInt();
+//		boolean mayorDeEdad=edad>=18;
+//		System.out.println("Mayor de edad: "+mayorDeEdad);
+
+//		11.		
+//		System.out.println("Introducir su edad");
+//		int edad=sc.nextInt();
+//		boolean mayorDeEdad=!(edad<=18);
+//		System.out.println("Mayor de edad: "+mayorDeEdad);
+	
+//		13.
+//		System.out.println("Introducir su edad");
+//		int edad=sc.nextInt();
+//		boolean trabajar=edad>=16 && edad<=65;
+//		System.out.println("edad de trabajar= "+trabajar);
+		
+		
+//		14.
+//		System.out.println("Introducir su edad");
+//		int edad=sc.nextInt();
+//		boolean trabajar=!(edad<16) && !(edad>65);
+//		System.out.println("edad de trabajar= "+trabajar);
+		
+//		15.
+//		System.out.println("Introducir altura 1 en cm");
+//		int altura1=sc.nextInt();
+//		System.out.println("Introducir altura 2 en cm");
+//		int altura2=sc.nextInt();
+//		System.out.println("Introducir altura 3 en cm");
+//		int altura3=sc.nextInt();
+//		
+//		int suma =altura1 + altura2 + altura3;
+//		int media=suma/3;
+//		
+//		System.out.println("La media es: " + media + " cm");
+
+// 16.
+//		System.out.println("Introducir altura 1 en m");
+//		double altura1=sc.nextDouble();
+//		System.out.println("Introducir altura 2 en m");
+//		double altura2=sc.nextDouble();
+//		System.out.println("Introducir altura 3 en m");
+//		double altura3=sc.nextDouble();		
+//		double suma =altura1 + altura2 + altura3;
+//		double media=suma/3;		
+//		System.out.println("Supera la media Nacional: "+ (media>=1.69));
+
+//17
+		System.out.println("Introducir 3 estaturas en metros");
+		double altura1=sc.nextDouble();
+		double altura2=sc.nextDouble();
+		double altura3=sc.nextDouble();
+		
+		System.out.println("Introducir M o H");
+		char sexo=sc.next().charAt(0);		
+		
+		
+		sc.close();
+	}
+	
+}

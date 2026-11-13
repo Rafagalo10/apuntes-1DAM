@@ -1,0 +1,104 @@
+package proyecto;
+
+import java.util.Scanner;
+
+public class PrincipalMenu {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		Alumno alumno1 = new Alumno();
+		int opcion;
+		
+		do {
+			System.out.println("=".repeat(5)+"Elegir Opcion"+"=".repeat(5));
+			System.out.println("1. Añadir datos de alumno");
+			System.out.println("2. Añadir edad");
+			System.out.println("3. Añadir Notas");
+			System.out.println("4. Mostrar Datos de alumno");
+			System.out.println("5. Registrar faltas");
+			System.out.println("6. Salir");
+			opcion=sc.nextInt();
+			
+			sc.nextLine();
+			
+			switch (opcion) {
+			case 1:
+				System.out.println("Introducir Nombre");
+				String nombre = sc.nextLine();
+				System.out.println("Introducir Apellido");
+				String apellido = sc.nextLine();
+				if (nombre.equals("")||apellido.equals("")) {
+						System.out.println("Los campos introducidos estan vacios");
+				} else {
+					alumno1.setNombre(nombre);
+					alumno1.setApellidos(apellido);
+				}
+				
+				break;
+				
+			case 2:
+				System.out.println("Introducir edad: ");
+				int edad = sc.nextInt();
+				sc.nextLine();
+				if (edad < 0 ) {
+					System.out.println("La edad introducida tiene que ser un numero entero");
+				} else {
+					alumno1.setEdad(edad);
+				}
+				break;
+			case 3:
+				System.out.println("Introducir nota1: ");
+				double nota1 = sc.nextDouble();
+				System.out.println("Introducir nota2: ");
+				double nota2 = sc.nextDouble();
+				System.out.println("Introducir nota3: ");
+				double nota3 = sc.nextDouble();
+				if (!(nota1>=0 && nota1<=10) || !(nota2>=0 && nota2<=10) || !(nota3>=0 && nota3<=10)) {
+					alumno1.setNota1(nota1);
+					alumno1.setNota2(nota2);
+					alumno1.setNota3(nota3);
+				}else {
+					System.out.println("Una nota es incorrecta");
+				}
+				break;
+			case 4:
+				System.out.println("Datos del alumno");
+				System.out.println("Nombre: "+alumno1.getNombre());
+				System.out.println("Apellidos: "+alumno1.getApellidos());
+				System.out.println("Edad: "+alumno1.getEdad());
+				System.out.println("Notas: "+alumno1.getNota1()+alumno1.getNota2()+alumno1.getNota3());
+				System.out.println("Faltas: "+alumno1.getInasistencias());
+				break;
+			case 5:
+				String registro;
+					do {
+						System.out.println("El alumno faltó?  Si/No");
+						registro = sc.nextLine();
+						registro.toUpperCase();
+						if (registro.equals("SI")) {
+							alumno1.faltar();
+						}
+					} while ((!registro.equals("SI"))||(!registro.equals("NO")));
+				break;
+			default:
+				break;
+			}
+		} while (opcion<=5&&opcion>0&&(opcion!=5));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,71 @@
+package proyecto;
+
+import java.util.Scanner;
+
+public class PrincipalMenu {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		Alumno alumno1 = new Alumno();
+		int opcion;
+		
+		do {
+			System.out.println("=".repeat(5)+"Elegir Opcion"+"=".repeat(5));
+			System.out.println("1. Añadir datos de alumno");
+			System.out.println("2. Añadir edad");
+			System.out.println("3. Añadir Notas");
+			System.out.println("4. Mostrar Datos de alumno");
+			System.out.println("5. Salir");
+			opcion=sc.nextInt();
+			switch (opcion) {
+			case 1:
+				System.out.println("Introducir Nombre");
+				String nombre = sc.nextLine();
+				System.out.println("Introducir Apellido");
+				String apellido = sc.nextLine();
+				if (nombre.equals("")||apellido.equals("")) {
+						System.out.println("Los campos introducidos estan vacios");
+				} else {
+					alumno1.setNombre(nombre);
+					alumno1.setApellidos(apellido);
+				}
+				
+				break;
+			case 2:
+				System.out.println("Introducir edad: ");
+				int edad = sc.nextInt();
+				if (edad < 0 ) {
+					System.out.println("La edad introducida tiene que ser un numero entero");
+				} else {
+					alumno1.setEdad(edad);
+				}
+				break;
+			case 3:
+				
+				break;
+			case 4:
+				
+				break;
+
+			default:
+				break;
+			}
+		} while (opcion<=5&&opcion>0&&(opcion!=5));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}
