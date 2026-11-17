@@ -57,5 +57,7 @@ public class Alumno {
 	public void faltar(int faltas) {
 		faltasAsistencias+=faltas;
 	}
-	public int calcularNotaMedia() {}
+	public double calcularNotaMedia() {
+		return ((nota1+nota2+nota3)/3);
+	}
 }

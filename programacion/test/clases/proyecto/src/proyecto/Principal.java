@@ -24,7 +24,7 @@ public class Principal {
 		System.out.println("Nota 3: ");
 		alumno1.setNota3(sc.nextDouble());
 		System.out.println("Faltas de asistencias: ");
-		alumno1.setInasistencias(sc.nextInt());
+//		alumno1.setInasistencias(sc.nextInt());
 		
 		sc.nextLine();
 		
